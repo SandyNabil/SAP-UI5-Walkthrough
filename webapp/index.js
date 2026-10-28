@@ -1,7 +1,15 @@
 sap.ui.define([
+    "sap/m/Text",
+    "sap/m/Button"
 
-], function() {
+], function(Text, Button) {
     "use strict";
 
-    alert("UI5 Is Ready to go!");
+    new Text({
+        text: "Hello UI5 and Hiiiii"
+    }).placeAt("content");
+
+    new Button({
+        text: "Click me!"
+    }).placeAt("content");
 });
